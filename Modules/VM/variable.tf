@@ -1,7 +1,9 @@
 variable "vm_name" {}
+variable "vm_size" {}
 variable "location" {}
 variable "resource_group_name" {}
-variable "vm_size" {}
-variable "nic_id" {}
+variable "subnet_id" {}
 variable "admin_username" {}
-variable "admin_password" {}
+variable "admin_password" {
+  sensitive = true
+}
